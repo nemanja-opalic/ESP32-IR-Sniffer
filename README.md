@@ -35,7 +35,7 @@ This is a simple IR sniffer for ESP32 that reads codes from an IR remote and dis
 4. Connect ESP32 and IR receiver:
    - VCC → 3.3V
    - GND (it's marked as "-" on some module boards) → GND
-   - OUT(it's marked with letter "S" on some module boards) → GPIO 13 (or change the pin in the code)
+   - OUT(it's marked with letter "S" on some module boards) → GPIO 4
 ---
 ## Wiring Diagram
 ![ESP32 & KY-022](image.png "ESP32 & KY-022")
@@ -48,7 +48,7 @@ This is a simple IR sniffer for ESP32 that reads codes from an IR remote and dis
 ```cpp
 #include <IRremote.h>
 
-int RECV_PIN = 13;
+int RECV_PIN = 4;
 
 IRrecv irrecv(RECV_PIN);
 decode_results results;
