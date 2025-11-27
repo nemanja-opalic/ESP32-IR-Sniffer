@@ -38,7 +38,7 @@ This is a simple IR sniffer for ESP32 that reads codes from an IR remote and dis
    - OUT(it's marked with letter "S" on some module boards) → GPIO 13 (or change the pin in the code)
 ---
 ## Wiring Diagram
-![ESP32 & KY-022](/image/image.png "ESP32 & KY-022")
+![ESP32 & KY-022](image.png "ESP32 & KY-022")
 ---
 
 ## 💻 Usage
