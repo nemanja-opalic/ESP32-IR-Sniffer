@@ -22,6 +22,7 @@ This is a simple IR sniffer for ESP32 that reads codes from an IR remote and dis
 
 ---
 
+
 ## 🛠 Installation
 
 1. Install Arduino IDE: [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
@@ -33,14 +34,16 @@ This is a simple IR sniffer for ESP32 that reads codes from an IR remote and dis
    - Sketch → Include Library → Manage Libraries → search for `IRremote` → Install
 4. Connect ESP32 and IR receiver:
    - VCC → 3.3V
-   - GND → GND
-   - OUT → GPIO 13 (or change the pin in the code)
-
+   - GND (it's marked as "-" on some module boards) → GND
+   - OUT(it's marked with letter "S" on some module boards) → GPIO 13 (or change the pin in the code)
+---
+## Wiring Diagram
+![ESP32 & KY-022](/image/image.png "ESP32 & KY-022")
 ---
 
 ## 💻 Usage
 
-1. Open Arduino IDE and upload `sketch_nov1a.ino`:
+1. Open Arduino IDE and upload `main_sketch.ino`:
 
 ```cpp
 #include <IRremote.h>
